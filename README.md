@@ -1,4 +1,4 @@
-Quick project to monitor the temperature and humidity in your rooms.
+Quick project to monitor the temperature and humidity in your rooms and display the current and historical values in your browser.
 
 
 # Summary
