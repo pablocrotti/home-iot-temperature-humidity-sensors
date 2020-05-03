@@ -67,6 +67,7 @@ CREATE TABLE `devices_list` (
 These are a simple PHP/JS scripts to display historical values as time series in `WEB/index.php` or the latest inputs in `summary.php`.
 
 - Modify the credentials at the top of each PHP pages in order to conenct to your MariaDB/MySQL server.
+- Add the Chart.js [library](https://www.chartjs.org/docs/latest/) in a `js` folder.
 
 If you haven't followed the previous steps in the MariaDB sections, you will need to change the name of the tables in all three php pages.
 
