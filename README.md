@@ -1,4 +1,4 @@
-Quick project to monitor the temperature and humidity in your rooms.
+Quick project to monitor the temperature and humidity in your rooms and display the current and historical values in your browser.
 
 
 # Summary
@@ -14,11 +14,11 @@ Here the, API endpoint is functions as a simple interface between the ESP32 and 
 
 ## ESP32
 
-The DHT sensor is connected to the GPIO Pin 14 on the ESP32. You can use any other GPIO pin but you will need to adjust the `DHT11_PIN` value in `ESP32/var/static.py`. A good tutorial for ESP32 and DHT11 is available here: https://randomnerdtutorials.com/esp32-esp8266-dht11-dht22-micropython-temperature-humidity-sensor/ .
+The DHT sensor is connected to the GPIO Pin 14 on the ESP32. You can use any other GPIO pin but you will need to adjust the `DHT11_PIN` value in `ESP32/var/static.py`. A good tutorial for ESP32 and DHT11 is available [here](https://randomnerdtutorials.com/esp32-esp8266-dht11-dht22-micropython-temperature-humidity-sensor/) .
 
 This part contains the Python files and modifications required to run the ESP32 with the DHT11 (also works with DHT22) and send the temperature and humidity values onto your wifi network and to the API endpoint.
 
-- Install the MicroPython framework and the correct IDF (here using v4) framework. More on this here: https://docs.micropython.org/en/latest/esp32/tutorial/intro.html .
+- Install the MicroPython framework and the correct IDF (here using v4) framework. More on this [here](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html).
 
 - Each device needs a unique key (defined in `ESP32/var/static.py`) in order to connect to the "API" server.
 Always change the key when you add a new device onto your network
@@ -27,7 +27,7 @@ Always change the key when you add a new device onto your network
 
 ## "API" endpoint
 
-The endpoint functions on a Python flask server. In order to set flask to work as a production server you will need to edit the WSGI configuration file. This is not treated here but you can find information on this link: https://flask.palletsprojects.com/en/1.1.x/deploying/mod_wsgi/.
+The endpoint functions on a Python flask server. In order to set flask to work as a production server you will need to edit the WSGI configuration file. This is not treated here but you can find information on [this link](https://flask.palletsprojects.com/en/1.1.x/deploying/mod_wsgi/).
 
 - Modify the list of authorised devices in `WEB/var/devices.py`
 - Modify the database (here MariaDB/MySQL) in `WEB/var/credentials.py`
@@ -52,7 +52,7 @@ CREATE TABLE `sensor_data` (
 ~~~~
 and the device_lists table with:
 ~~~~
-                CREATE TABLE `devices_list` (
+CREATE TABLE `devices_list` (
                   `ID` int(11) NOT NULL AUTO_INCREMENT,
                   `DEVICEKEY` longtext NOT NULL,
                   `DEVICELOC` longtext NOT NULL,
