@@ -52,7 +52,7 @@ CREATE TABLE `sensor_data` (
 ~~~~
 and the device_lists table with:
 ~~~~
-                CREATE TABLE `devices_list` (
+CREATE TABLE `devices_list` (
                   `ID` int(11) NOT NULL AUTO_INCREMENT,
                   `DEVICEKEY` longtext NOT NULL,
                   `DEVICELOC` longtext NOT NULL,
