@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <pma:structure_schemas>
+        <pma:database name="sensors" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="sensor_data">
+                CREATE TABLE `sensor_data` (
+                  `Id` int(11) NOT NULL AUTO_INCREMENT,
+                  `DEVICEKEY` varchar(64) NOT NULL,
+                  `DEVICENAME` longtext NOT NULL,
+                  `DEVICELOC` longtext NOT NULL,
+                  `DEVICETEMP` decimal(10,0) NOT NULL,
+                  `DEVICEHUM` decimal(10,0) NOT NULL,
+                  `DATE` datetime NOT NULL,
+                  PRIMARY KEY (`Id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+</pma_xml_export>
