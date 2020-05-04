@@ -9,6 +9,12 @@ The readings are received via a pseudo API server (here a Raspberry PI 3) which 
 
 Here the, API endpoint is functions as a simple interface between the ESP32 and the SQL server. It is, de facto, not a real a (REST) API. The term API is used for simplicity.
 
+I have designed and 3D printed a case to host the ESP32 and the DHT11 module. The STL file is available in the `STL` section.
+
+![](https://github.com/pablocrotti/home-iot-temperature-humidity-sensors/blob/master/IMG/esp32_dht11.png | width=100)
+
+![](https://github.com/pablocrotti/home-iot-temperature-humidity-sensors/blob/master/IMG/esp32_3dcase.png | width=100)
+
 
 # Install
 
